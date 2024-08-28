@@ -1,0 +1,170 @@
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  letter-spacing: 0.05cap;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.coming-soon-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 70px;
+  box-sizing: border-box;
+  padding: 70px 150px 0px 150px;
+}
+
+.logo {
+  width: 150px;
+  height: 50px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.coming-soon-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.coming-soon-text h2,
+span {
+  text-transform: uppercase;
+  letter-spacing: 0.5cap;
+}
+
+.coming-soon-text span {
+  font-size: 50px;
+  font-weight: 300;
+  color: var(--Desaturated-Red);
+}
+
+.coming-soon-text h2 {
+  font-size: 60px;
+  color: var(--Dark-Grayish-Red);
+  font-weight: 600;
+}
+
+.coming-soon-text p {
+  width: 400px;
+  font-size: 15px;
+  color: var(--Desaturated-Red);
+  letter-spacing: 0.05cap;
+  line-height: 2;
+}
+
+.email-subscription {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form {
+  position: relative;
+}
+
+.email-subscription input {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--Desaturated-Red);
+  padding: 10px;
+}
+
+.email-subscription input:focus {
+  outline: none;
+}
+
+.email-subscription input::placeholder {
+  color: var(--Desaturated-Red);
+  font-size: 14px;
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 90px;
+  height: 52px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.15);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+button img {
+  height: 25px;
+}
+
+.right {
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.display-none {
+  display: none;
+}
+
+#error-message {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: red;
+}
+
+#error-icon {
+  position: absolute;
+  top: 13px;
+  right: 100px;
+}

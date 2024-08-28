@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <div class="coming-soon-container">
+      <div class="left">
+        <!-- Logo Section -->
+        <div class="logo">
+          <img src="./images/logo.svg" alt="base-apparel-Logo" />
+        </div>
+
+        <!-- Text Section -->
+        <div class="coming-soon-text">
+          <h2>
+            <span>We're</span><br />
+            Coming Soon
+          </h2>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </div>
+
+        <!-- Email Subscription Section -->
+        <div class="email-subscription">
+          <form>
+            <input type="email" placeholder="Email Address" required />
+            <button type="submit">
+              <img src="./images/icon-arrow.svg" alt="icon-arrow" />
+            </button>
+            <img
+              src="./images/icon-error.svg"
+              alt="icon-error"
+              id="error-icon"
+              class="display-none"
+            />
+            <p id="error-message" class="display-none">
+              Please provide a valid email !
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="right">
+        <!-- Image Section -->
+        <div class="hero-image">
+          <img src="./images/hero-desktop.jpg" alt="model-in-orange-shirt" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
